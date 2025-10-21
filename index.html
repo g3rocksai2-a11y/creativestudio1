@@ -1616,7 +1616,21 @@
         });
 
     </script>
-    <script>
+      <!-- Gemini AI Generator block -->
+  <div id="gemini-container" style="margin:2rem 0; padding:1rem; border:1px solid #ddd; border-radius:8px;">
+    <h2>Gemini AI Generator</h2>
+
+    <input id="userInput" type="text" placeholder="Enter your prompt here" style="width:80%; padding:0.5rem; font-size:1rem;" />
+    <button id="generateButton" style="padding:0.5rem 1rem; font-size:1rem; margin-left:0.5rem;">Generate</button>
+
+    <h3>Output:</h3>
+    <pre id="output" style="background:#f4f4f4; padding:1rem; white-space:pre-wrap;">Your generated content will appear here.</pre>
+  </div>
+
+  <!-- Link to your Gemini JS file -->
+  <script src="call-gemini.js"></script>
+
+  <script>
         // This script disables right-clicking and common keyboard shortcuts
         // to make it harder for casual users to copy the source code.
         // Note: This is not a foolproof security measure, but a deterrent.
@@ -1649,4 +1663,3 @@
     </script>
 </body>
 </html>
-
